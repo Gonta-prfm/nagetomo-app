@@ -8,6 +8,12 @@ class RoomsController < ApplicationController
     @room.users << current_user
   end
 
+  def show
+    @room = Room.find(params[:id])
+    @messages = @room.messages.includes(:user).order(:id).last(100)
+    @message = current_user.messages.build
+  end
+
   def create 
     @room = Room.new(room_params)
     if @room.save
