@@ -44,9 +44,11 @@
       </div>
         <div class="list">
           <ul>
-            <li class="room-name">ルーム１</li>
-            <li class="room-name">ルーム２</li>
-            <li class="room-name">ルーム３</li>
+          <% @rooms.each do |room| %>
+            <li class="room-name">
+              <%= link_to "#{room.name}", room_path(room), class: "room-btn" %>
+            </li>
+          <% end %>
           </ul>
         </div>
 </div>
