@@ -3,13 +3,6 @@ class RoomsController < ApplicationController
     @rooms = Room.all.order("created_at DESC")
   end
 
-  
-  def show
-    @room = Room.find(params[:id])
-    @messages = @room.messages.includes(:user).order(:id).last(100)
-    @message = current_user.messages.build
-  end
-  
   def new
     @room = Room.new
   end

@@ -1,6 +1,0 @@
-<div class="message" id="message-<%= message.id %>">
-  <p><%= message.user.nickname %></p>
-  
-  <%# 改行を反映させる、hメソッドでHTMLタグを反映されないようにする記述 %>
-    <%= simple_format(h message.content) %>
-</div>
