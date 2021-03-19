@@ -1,3 +1,40 @@
-// Place all the styles related to the messages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.chat-name{
+  padding-top:20px;
+  padding-left:30px;
+  font-size: 20px;
+}
+
+.message-box{
+  height: calc(100vh - 240px);
+}
+
+.footer{
+  background-color: burlywood;
+}
+
+.form-main{
+  width:100vh;
+  height:120px;
+}
+
+.form{
+  display: flex;
+}
+
+.form-input{
+  margin-right: 10px;
+}
+
+.form-message{
+  width: 90vw;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.form-submit{
+  padding: 5px 10px;
+  margin-top: 10px;
+}

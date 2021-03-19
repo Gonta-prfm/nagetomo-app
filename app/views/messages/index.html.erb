@@ -1,0 +1,10 @@
+<%= render "shared/header" %>
+
+<div class="chat-name wf-roundedmplus1c">
+  <%= "#{@room.name}" %>
+</div>
+<div class="message-box", id='messages'>
+  <%= render @messages %>
+</div>
+
+<%= render "messages/footer" %>

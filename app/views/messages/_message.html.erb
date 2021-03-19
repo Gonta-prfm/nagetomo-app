@@ -1,0 +1,13 @@
+<div class="message">
+  <div class="user-name">
+    <div class="user-name">
+      <%= message.user.nickname %>
+    </div>
+    <div class="dau-time">
+      <%= l message.create_at %>
+    </div>
+    </div class="message-content">
+      <%= simple_format(h message.content) %>
+    </div>
+  </div>
+</div>
