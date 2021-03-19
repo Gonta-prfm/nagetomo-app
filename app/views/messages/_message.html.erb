@@ -3,8 +3,8 @@
     <div class="user-name">
       <%= message.user.nickname %>
     </div>
-    <div class="dau-time">
-      <%= l message.create_at %>
+    <div class="day-time">
+      <%= message.updated_at.strftime("%m/%d %H:%M") %>
     </div>
     </div class="message-content">
       <%= simple_format(h message.content) %>
