@@ -1,0 +1,68 @@
+.chat-name{
+  padding-top:20px;
+  padding-left:30px;
+  font-size: 25px;
+}
+
+.message-main{
+  height: calc(100vh - 120px - 65px);
+  overflow: scroll;
+}
+
+.messages{
+  margin: 20px;
+}
+
+.message{
+  margin-bottom: 20px;
+}
+
+.message-user{
+  font-size: 15px;
+}
+
+.message-content{
+  color: #FFFFEE;
+  background-color:#CC9933	;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.message-time{
+  font-size: 5px;
+  opacity: 0.4;
+}
+
+
+.footer{
+  height: 65px;
+  background-color: burlywood;
+}
+
+.form-main{
+  width:100vh;
+  height:65px;
+}
+
+.form{
+  display: flex;
+}
+
+.form-input{
+  margin-right: 10px;
+}
+
+.form-message{
+  width: 90vw;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.form-submit{
+  padding: 5px 10px;
+  margin-top: 10px;
+}

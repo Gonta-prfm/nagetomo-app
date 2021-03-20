@@ -14,8 +14,8 @@
 
 ### Association
 
-- has_many :user_rooms
-- has_many :rooms, through: user_rooms
+- has_many :room_users
+- has_many :rooms, through: room_users
 - has_many :messages
 
 
@@ -27,11 +27,11 @@
 
 ### Association
 
-- has_many :user_rooms
-- has_many :users, through: user_rooms
+- has_many :room_users
+- has_many :users, through: room_users
 - has_many :messages
 
-## user_rooms テーブル
+## room_users テーブル
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |

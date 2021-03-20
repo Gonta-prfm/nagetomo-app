@@ -1,6 +1,11 @@
-<div class="message" id="message-<%= message.id %>">
-  <p><%= message.user.nickname %></p>
-  
-  <%# 改行を反映させる、hメソッドでHTMLタグを反映されないようにする記述 %>
+<div class="message">
+  <div class="message-user">
+    <%= message.user.nickname %>
+  </div>
+  <div class="message-content">
     <%= simple_format(h message.content) %>
+  </div>
+  <div class="message-time">
+     <%= message.updated_at.strftime("%m/%d %H:%M") %>
+  </div>
 </div>
