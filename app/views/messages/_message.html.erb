@@ -6,6 +6,6 @@
     <%= simple_format(h message.content) %>
   </div>
   <div class="message-time">
-     <%= message.updated_at.strftime("%m/%d %H:%M") %>
+     <%= message.updated_at&.strftime("%m/%d %H:%M") %>
   </div>
 </div>
