@@ -21,21 +21,16 @@
   </div>
   
     <div class="favorite-title">
-      <h1>☆お気に入りの投げ友</h1>
+      <h1>☆投げ友一覧</h1>
     </div>
       <div class="list">
       <ul>
         <div class="friend-list">
-          <%= image_tag 'user.png',size: '30x30', class: "user-img" %>
-          <li class="user-name">山田</li>
-        </div>
-        <div class="friend-list">
-          <%= image_tag 'user.png',size: '30x30', class: "user-img" %>
-          <li class="user-name">佐藤</li>
-        </div>
-        <div class="friend-list">
-          <%= image_tag 'user.png',size: '30x30', class: "user-img" %>
-          <li class="user-name">田中</li>
+          <% @users.each do |user| %>
+            <li class="user-name">
+              <%= link_to "☆#{user.nickname}", user_path(user) %>
+            </li>
+          <% end %>
         </div>
       </ul>
       </div>
@@ -44,11 +39,13 @@
       </div>
         <div class="list">
           <ul>
+          <div class="room-list">
           <% @rooms.each do |room| %>
             <li class="room-name">
               <%= link_to room.name,  room_messages_path(room), class: "room-btn" %>
             </li>
           <% end %>
+          </div>
           </ul>
         </div>
 </div>

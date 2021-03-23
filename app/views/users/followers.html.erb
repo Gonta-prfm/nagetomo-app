@@ -1,0 +1,15 @@
+<%= render "shared/header" %>
+<div class="follow wf-roundedmplus1c">
+  <div class="follow-main">
+    <div class="follow-title">
+      <h1>フォロワー</h1>
+    </div>
+    <div class="follow-users">
+      <% @users.each do |user| %>
+      <div class="follow-user">
+        <%= link_to "#{user.nickname}", user_path(user.id) %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
