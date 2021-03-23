@@ -9,7 +9,7 @@ class User < ApplicationRecord
 
   #ユーザーがフォローしているユーザーとのアソシエーション
   has_many :relationships, foreign_key: "user_id", dependent: :destroy
-  has_many :follewings, through: :relationships, source: :follow
+  has_many :followings, through: :relationships, source: :follow
 
   #ユーザーをフォローしてくれているユーザーとのアソシエーション
   has_many :passive_relationships, class_name: "Relationship",
@@ -17,7 +17,7 @@ class User < ApplicationRecord
   has_many :followers, through: :passive_relationships, source: :user
 
   def following?(other_user)
-    self.followings.includes?(other_user)
+    self.followings.include?(other_user)
   end
 
   def follow(other_user)
