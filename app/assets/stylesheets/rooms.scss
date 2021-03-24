@@ -52,25 +52,28 @@
   padding-bottom: 20px;
 }
 
-.friend-list{
-  display: flex;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-.user-img{
-  border: 1px solid gray;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.user-name{
- color: black;
-}
-
 .list{
   margin-left: 20px;
   padding-bottom: 20px;
+}
+
+.friend-list{
+  height: 150px;
+  overflow: scroll;
+}
+
+.user-name{
+ margin-bottom: 30px;
+}
+
+.user-name a{
+ color: black;
+ text-decoration: none;
+}
+
+.room-list{
+  height: 150px;
+  overflow: scroll;
 }
 
 .rooms{

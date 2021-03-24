@@ -1,35 +1,130 @@
 .user-edit{
- display: flex;
-}
+  display: flex;
+ }
+ 
+ .edit-main{
+   display: block;
+   position: relative;
+   left: 43%;
+ }
+ 
+ .actions{
+   margin: 10px 0;
+ }
+ 
+ .field{
+   margin-bottom: 20px;
+ }
+ 
+ .user-title{
+   padding-bottom: 20px;
+ }
+ 
+ .user-main{
+   display: block;
+   position: relative;
+   top:20%;
+   left: 43%;
+ }
+ 
+ .user-top{
+   background-color: wheat;
+   width: 100vw;
+   height:100vh;
+ }
 
-.edit-main{
-  display: block;
-  position: relative;
-  left: 43%;
-}
+ .show-title{
+   text-align: center;
+   margin:30px 0;
+ }
 
-.actions{
-  margin: 10px 0;
-}
+ .detail-table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+ }
 
-.field{
-  margin-bottom: 20px;
-}
+ .detail-user{
+   background-color: #FFFFEE;
+   padding: 20px 20px;
+   border: 1px solid #D2691E;
+ }
 
-.user-title{
-  padding-bottom: 20px;
-}
+ .detail-value{
+  background-color: #FFFFEE;
+  padding: 20px 20px;
+  border: 1px solid #D2691E;
+ }
 
-.user-main{
-  display: block;
-  position: relative;
-  top:20%;
-  left: 43%;
-}
+ .follow-btn{
+   text-align: center;
+   margin-bottom: 30px;
+ }
 
-.user-top{
+ .follow-btn a{
+  text-decoration: none;
+  color: black;
+ }
+
+ .edit-btn{
+   text-align: center;
+ }
+
+ .edit-btn a{
+   color:darkolivegreen;
+   font-size:20px;
+   text-decoration: none;
+ }
+
+ .follow-button{
+  text-align: center;
+ }
+
+ .button{
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid gray;
+ }
+
+
+ .follow{
   background-color: wheat;
   width: 100vw;
-  height:100vh;
-}
+  height: calc(100vh - 120px);
+  padding-top: 30px;
+  
+ }
 
+ .follow-main{
+   width:100vw;
+   height:calc(100vh - 120px - 30px);
+   margin: auto;
+ }
+
+ .follow-title{
+   text-align: center;
+   font-size: 25px;
+   color:#CC6600;
+   margin-bottom: 20px;
+ }
+
+ .follow-users{
+   width: 80vw;
+   height:65vh;
+   margin: auto;
+   text-align: center;
+   font-size: 20px;
+   overflow: scroll;
+   border: 1px solid #CC9999;
+ }
+
+ .follow-users a{
+   text-decoration: none;
+   color:black;
+ }
+
+ .follow-user{
+   display: block;
+   margin-top: 25px;
+   margin-bottom: 25px;
+ }

@@ -5,7 +5,7 @@
   <%= link_to new_room_path do %>
     <%= image_tag 'message.png',size: '100x100' %>
   <% end %>
-  <%= link_to edit_user_registration_path do %>
+  <%= link_to "/users/#{current_user.id}" do %>
     <%= image_tag 'user.png',size: '100x100' %>
   <% end %>
 </div>

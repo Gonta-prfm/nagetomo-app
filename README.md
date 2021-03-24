@@ -18,6 +18,8 @@
 - has_many :rooms, through: room_users
 - has_many :messages
 
+- has_many :followins, through: relationships
+
 
 ## rooms テーブル
 
@@ -55,3 +57,12 @@
 
 - belongs_to :room
 - belongs_to :user
+
+## relationships テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| user    | references | null: false, foreign_key: true |
+| follwer | references | null: false, foreign_key: true |
+
+- has_many :followers, through: passive_relationshops
