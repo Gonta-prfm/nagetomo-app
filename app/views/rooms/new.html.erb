@@ -3,6 +3,7 @@
 <div class="main wf-roundedmplus1c">
   <div class="chat-room">
     <%= form_with model: @room, local: true do |f| %>
+    <%= render 'layouts/error_messages', model: f.object %>
       <%= f.label :name, "チャットルーム名" %><br />
       <p><%= f.text_field :name %></p>
       <p>チャットメンバー</p>
