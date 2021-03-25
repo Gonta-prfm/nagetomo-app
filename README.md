@@ -1,7 +1,7 @@
 # README
 
-# アプリケション名  
-- NageTomo
+## アプリケション名  
+  NageTomo
 
 ## 概要  
 <dl>
