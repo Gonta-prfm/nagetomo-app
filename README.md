@@ -22,7 +22,7 @@
 
 ## DEMO
 ![demo](https://gyazo.com/165d8f01f546fdbe3fae4e840781e63e/raw)  
-![demo](https://gyazo.com/3698204381ae34a41a240ef355ff05c4/raw)  
+![demo](https://gyazo.com/e7d920b2c90c7c7ff1a7dc0d3d7d9d16/raw)  
 
 ## 工夫したポイント  
 - 双方向通信を使用しているためリアルタイムでチャットができる  
