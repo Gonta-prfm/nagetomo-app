@@ -1,7 +1,10 @@
 # README
 
 ## アプリケション名  
-  NageTomo
+  NageTomo  
+
+## URL
+https://nagetomo-app.herokuapp.com/  
 
 ## 概要  
 <dl>
@@ -18,7 +21,17 @@
 ## 制作背景  
 現在、ダーツで遊んでいる人の多くが1人で遊んでいます。  
 その背景にあるのが、ダーツ場や、ダーツバーが減っておりコミュニケーション機会が減っているからです。  
-なので上記の問題を解決するために「NageTomo」アプリケーションを作ろうと思いました。　　
+なので上記の問題を解決するために「NageTomo」アプリケーションを作ろうと思いました。  
+
+## ユーザーログイン情報  
+<dl>
+  <dt>ユーザー1 情報</dt>
+    <dd>メールアドレス: hoge@gmail.com</dd>
+    <dd>パスワード: hoge1234</dd>
+  <dt>ユーザー2 情報</dt>
+    <dd>メールアドレス: test@gmail.com</dd>
+    <dd>パスワード: test1234</dd>
+</dl>
 
 ## DEMO
 ![demo](https://gyazo.com/165d8f01f546fdbe3fae4e840781e63e/raw)  
