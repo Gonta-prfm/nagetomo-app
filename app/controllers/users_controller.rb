@@ -15,4 +15,12 @@ class UsersController < ApplicationController
     @users = @user.followers.all
   end
 
+  def search
+    if params[:search_keyword].present?
+      @users = User.where('nickname LIKE ?', "%#{params[:search_keyword]}%")
+    else 
+      @users = User.none
+    end
+  end
+
 end
