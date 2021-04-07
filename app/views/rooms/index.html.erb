@@ -1,11 +1,10 @@
-<div class="header-bar">
-  <%= render "shared/header" %>
-</div>
+<%= render "shared/header" %>
 
 <div class="main wf-roundedmplus1c">
   <% if user_signed_in? %>
     <div class="btn-list">
       <div class="chat-btn">
+        <%= link_to "検索", search_users_path, method: :get %>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       </div>
   <% else %>

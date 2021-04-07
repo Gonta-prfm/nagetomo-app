@@ -1,0 +1,22 @@
+<%= render "shared/header" %>
+<div class="main">
+  <div class="search-title"> 
+    <h1>User search</h1>
+  </div>
+
+  <div class="search-form">
+    <%= form_tag search_users_path, method: :get do %>
+      <%= text_field_tag :search_keyword %>
+      <%= submit_tag "Search", usernickname: :nil, class: "search-button" %>
+    <% end %>
+  </div>
+
+  <div class="friend-list">
+    <% @users.each do |user| %>
+      <li class="search-users">
+        <%= link_to "#{user.nickname}", user_path(user), class: "user-name-search" %>
+        <%= link_to "#{user.profile}", user_path(user), class: "user-profile-search" %>
+      </li>
+    <% end %>
+  </div>
+</div>
