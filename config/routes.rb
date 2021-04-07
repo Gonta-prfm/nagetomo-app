@@ -5,6 +5,7 @@ Rails.application.routes.draw do
    root 'rooms#index'
    get 'room/index'
    resources :users, only: [:show] do
+    get :search, on: :collection
     get :followings, on: :member
     get :followers, on: :member
   end
