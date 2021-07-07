@@ -33,6 +33,7 @@ class User < ApplicationRecord
 
 
   validates :profile,  length: {maximum: 200}
+  mount_uploader :image, ImageUploader
 
   with_options presence: true do
     validates :nickname

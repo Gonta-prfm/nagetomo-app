@@ -5,6 +5,15 @@
         <div class="show-title">
           <%= "#{@user.nickname}さんの詳細画面"%>
         </div>
+        
+          <div class="avater-area">
+            <% if @user.image? %>
+              <%= image_tag @user.image.url, class: "icon-size" %>
+          <% else %>
+              <%= image_tag "/assets/user.png", class: "icon-size" %>
+          <% end %>
+          
+        </div>
       <table class="detail-table">
         <tbody>
           <tr>

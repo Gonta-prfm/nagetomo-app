@@ -27,7 +27,12 @@
         <div class="friend-list">
           <% @users.each do |user| %>
             <li class="user-name">
-              <%= link_to "☆#{user.nickname}", user_path(user) %>
+                <% if user.image? %>
+                  <%= image_tag user.image.url, class: "avater-size" %>
+               <% else %>
+                  <%= image_tag "/assets/user.png", class: "avater-size" %>
+               <% end %>
+              <%= link_to "#{user.nickname}", user_path(user), class: "user-nickname" %>
             </li>
           <% end %>
         </div>
