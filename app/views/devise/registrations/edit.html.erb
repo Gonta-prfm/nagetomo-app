@@ -7,6 +7,15 @@
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
 
+      <% if @user.image? %>
+        <%= image_tag @user.image.url, class: "icon-size" %>
+      <% else %>
+        <%= image_tag "/assets/user.png", class: "icon-size" %>
+      <% end %>
+      <button type="button", class="icon-btn">
+        <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png' %>
+      </button>
+
     <div class="field">
       <%= f.label :nickname, "ユーザー名" %><br />
       <%= f.text_field :nickname, autofocus: true, autocomplete: "nickname" %>
